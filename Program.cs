@@ -25,6 +25,13 @@
 
                     System.Console.Write("Informe o segundo valor: ");
                     n2 = Convert.ToDecimal(Console.ReadLine());
+
+                    if (n1 == 0 && opcao == 3)
+                    {
+                        System.Console.WriteLine("\nO dividendo não pode ser ZERO\nTecle para continuar...");
+                        Console.ReadKey();
+                        continue;
+                    }
                     Console.Clear();
 
                 }
